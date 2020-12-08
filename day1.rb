@@ -10,7 +10,6 @@ i2 = gets.to_i
 d2 = gets.to_f
 s2 = gets
 
-
 # Print the sum of both integer variables on a new line.
 puts i + i2
 # Print the sum of the double variables on a new line.
