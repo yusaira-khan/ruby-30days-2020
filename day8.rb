@@ -18,11 +18,15 @@ def print_entry_from_phone(phone, entry)
 end
 def print_all_from_phone(phone)
   loop do
-    entry = gets.chomp
+    entry = gets
+    if entry.nil?
+      break
+    end
+    entry = entry.chomp
     if entry.empty?
       break
     end
-    print_entry_from_phone phone,entry
+    print_entry_from_phone phone,entry.chomp
   end
 end
 phone = get_phone
